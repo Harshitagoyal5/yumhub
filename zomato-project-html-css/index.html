@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" 
+        rel="stylesheet" /> 
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <title>Zomato - Food Delivery</title>
+    <link rel="shortcut icon" href="home images/logo green.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__brand">
+                <!--green logo-->
+                <img src="home images\logo green.png" alt="logo" class="navbar__logo" />
+            </div>
+            <div class="navbar__nav__items">
+                <button class="nav__item button__primary" onclick="redirectToOrderPage()" >Order Food</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero__container">
+            <div class="hero__image__container">
+                <img src="https://img.freepik.com/free-photo/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl-dark-top-view_127032-1966.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699747200&semt=ais" alt="hero image" class="hero__image" />
+                <img src="Assets/svg/blob.svg" alt="hero image shape" class="hero__image__shape" />
+                <img src="Assets/svg/herobgpattren.svg" alt="hero image shape" class="hero__image__pattren" />
+            </div>
+            </div>
+            <div class="hero__description">
+                <h1 class="hero__description__text">Order tasty nutritious food from favourite restaurants near you</h1>
+                <button class="button__primary" onclick="redirectToOrderPage()"  >Order Now</button>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <!-- <section class="video__footage__container">
+            <div class="video__footage__gradient__bg"></div>
+            <div class="video__footage">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/323795266" width: 100% height="320" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video__text">Your food will be prepared safely with an experienced chef, without compromising on the quality and hygiene.</div>
+        </section> -->
+
+        <!-- Explore Menu -->
+        <section class="explore__menu__container">
+            <h1 class="explore__menu__text">Explore our menu</h1>
+            <div class="explore__menu__bg__gradient"></div>
+            <div class="explore__menu__lists">
+                <!-- Burger -->
+                <div class="food__card">
+                    <div class="food__image__container">
+                        <img src="Assets/Screenshot 2023-11-14 211037.png" alt="burger image" class="food__image" />
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Salad Bowl</h3>
+                        <p class="food__description">Diggin, Jamie's Italian, Olive Bar & kitchen
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Pizza -->
+                <div class="food__card food__card__move__up">
+                    <div class="food__image__container">
+                        <img src="Assets/Egg Dish.jpg" alt="burger image" class="food__image" />
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Egg Bhurji</h3>
+                        <p class="food__description">Pizza Hut, Domino's Pizza 
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- Ice cream -->
+                <div class="food__card">
+                    <div class="food__image__container">
+                        <img src="Assets/Sandwich-.jpg" alt="burger image" class="food__image" />
+                    </div>
+                    <div class="food__card__description">
+                        <h3 class="food__title">Sandwich</h3>
+                        <p class="food__description">Baskin Robins, Ibaco
+                            <span style="color: red;">3+</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="explore__menu__view__more">
+                <button class="view__more__button">View more</button>
+            </div>
+        </section>
+
+        <!-- Restaurant list -->
+        <section class="restaurant__container">
+            <h2 class="restaurant__text">Who says eating healthy is Boring?</h2>
+            <div class="restaurant__images__container">
+                <div class="restaurant__images__row__one">
+                    <div class="restaurant__image__1">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipOs5g-XXDdOGxl0F2UXwF--heNISvkWBD_C2VWx=s1360-w1360-h1020" alt="restaurant one" class="restaurant__1" />
+                    </div>
+                    <div class="restaurant__image__2">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNyUfGmdZ0biPB9tmFPmhckiM7WoVKRJfELJf2x=s1360-w1360-h1020" alt="restaurant two" class="restaurant__2" />
+                    </div>
+                </div>
+                <div class="restaurant__images__row__two">
+                    <div class="restaurant__image__3">
+                        <img src="https://res.cloudinary.com/purnesh/image/upload/f_auto/v1640260433/61640260432303.jpg" alt="restaurant three" class="restaurant__3" />
+                    </div>
+                    <div class="restaurant__image__4">
+                        <img src="https://imgmedia.lbb.in/media/2019/04/5cba0d77432de2706bb4fcc7_1555697015767.jpg" alt="restaurant four" class="restaurant__4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Update Section -->
+        <section class="email__subcribe__container">
+            <div class="subscribe__items">
+              <h1 class="email__text" >Stay Updated</h1>
+              <div class="email__subcribe__input__field">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="email@email.com"
+                    class="email__input"
+                  />
+                </div>
+                <button class="email__button" id="update">Get Updates</button>
+              </div>
+            </div>
+          </section>
+          <script>
+            // Get the button element by its ID
+            var button = document.getElementsByClassName("myButton");
+        
+            // Add a click event listener to the button
+            button.addEventListener("click", function() {
+              // Display an alert when the button is clicked
+              alert("Button pressed!");
+            });
+          </script>
+        
+
+        <!-- Quote Section -->
+        <section class="quote__container">
+            <div class="quote__image__container">
+                <img src="Assets/restaurant1.jpg" alt="restaurant background image" class="quote__image" />
+            </div>
+            <div class="quote__image__overlay"></div>
+                <h3 class="quote__text">When a man's stomach is full it makes no difference whether he is rich or poor.</h3>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__brand">
+                <img src="home images\logo white.png" alt="logo" class="footer__logo" />
+            </div>
+            <div class="footer__items__container">
+                <div class="footer__items__list">
+                    <h3 class="footer__item"> <a href="index.html">Home</a></h3> 
+                    <h3 class="footer__item"> <a href="../zomato-project-html-css/others/about.html">About</a>  </h3>
+                    <h3 class="footer__item"><a href="others/contactus.html">Contact Us</a></h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

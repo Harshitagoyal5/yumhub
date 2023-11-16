@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+    <title>order now</title>
+    <link rel="shortcut icon" href="C:\Users\Harshita Goyal\OneDrive\Desktop\FOOD\zomato-project-html-css\home images\logo green.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+      <img src="logo white.png" alt="logo white">
+      </header>
+    <!-- Dropdown for state-->
+      <div id="search-container">
+        <select id="location-dropdown" onchange="switchLocation(this.value)">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="punjab">Punjab</option>
+          <option value="haryana">Haryana</option>
+          <option value="bangalore">Bangalore</option>
+          <!-- Add more state options as needed -->
+        </select>
+    
+        <input type="text" id="search-input" placeholder="Search nearby restaurants, cafes, bars...">
+    
+        <button id="search-button" onclick="searchFunction()">Search</button>
+      </div>
+
+      <script>
+        function searchFunction() {
+          // You can implement search functionality using JavaScript
+          alert("Searching...");
+        }
+      </script>
+
+<!-- Inspiration- for food items section-->
+
+<div>
+  <h2 ><center>Recommended for you</center></h2>
+</div>
+
+  <section>
+    <!-- Food Item 1: Biryani -->
+    <div class="food-item">
+      <img src="https://omnivorescookbook.com/wp-content/uploads/2020/02/2002_Tofu-And-Broccoli_550.jpg" alt="Biryani">
+      <div class="food-item-content">
+        <h3>Tofu-stir Fry</h3>
+        <p>Delicious biryani made with aromatic spices.</p>
+      </div>
+    </div>
+
+    <!-- Food Item 2: Chicken -->
+    <div class="food-item">
+      <img src="https://www.eatingwell.com/thmb/pPT45XFJhj5hWsw_KcHj1oXGWto=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3879371-c392a8d0bac74dd2885f099e68164ca2.jpg" alt="Chicken">
+      <div class="food-item-content">
+        <h3>Scrambled Eggs</h3>
+        <p>Spicy and succulent chicken curry.</p>
+      </div>
+    </div>
+
+    <!-- Food Item 3: Thali -->
+    <div class="food-item">
+      <img src="https://www.darngoodveggies.com/wp-content/uploads/2021/07/Strawberry-Smoothie-Bowl-6.jpg" alt="Thali">
+      <div class="food-item-content">
+        <h3>Strawberry Banana Smoothie Bowl</h3>
+        <p>Assorted thali with a variety of dishes.</p>
+      </div>
+    </div>
+
+    <!-- Food Item 4: Pizza -->
+    <div class="food-item">
+      <img src="https://www.eatingwell.com/thmb/P3WwF1tZ1iFaOvKQDnJthqT4kdY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Quick-Cooking-Oats-0175-1-b7bb0c5ed67a43569c1d7bae7a75ae7a.jpg" alt="Pizza">
+      <div class="food-item-content">
+        <h3>Pizza</h3>
+        <p>Oats with Berries.</p>
+      </div>
+    </div>
+
+    <!-- Food Item 5: Fried Rice -->
+    <div class="food-item">
+      <img src="https://recipes.net/wp-content/uploads/2021/04/a-bowl-of-healthy-food.jpg" alt="Fried Rice">
+      <div class="food-item-content">
+        <h3>Salad Bowl</h3>
+        <p>Classic fried rice with vegetables and choice of protein.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div>
+    <h2 ><center>Best restaurants nearby you</center></h2>
+  </div>
+  
+
+  <section id="restaurant-section">
+    <!-- Restaurant items will be dynamically generated here -->
+  </section>
+  <script>
+    generateRestaurantItems("delhi");
+  </script>
+
+<footer>
+  <img src="logo white.png" alt="Website Logo">
+  
+  <div class="footer-links">
+    <a href="../index.html">Home</a>
+    <a href="../others/about.html">About</a>
+    <a href="../others/contactus.html">Contact Us</a>
+  </div>
+  <p>&copy; 2023 Your Food Delivery Website. All rights reserved.</p>
+ 
+</footer>
+
+
+</body>
+</html>
